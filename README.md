@@ -19,7 +19,7 @@ Example using maven:
 </dependency>
 ```
 
-# Usage
+## Usage
 
 Simple usage:
 ```java
