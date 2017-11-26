@@ -32,4 +32,5 @@ deploy:
   provider: script
   script: mvn deploy --settings artifacts/ci/maven-settings.xml
   skip_cleanup: true
-
+  on:
+    tags: true
