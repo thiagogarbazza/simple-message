@@ -29,6 +29,6 @@ public class MessagesTest {
     Messages mErrors = messages.extractByType(ERROR);
 
     assertEquals(1, mErrors.size());
-    assertEquals("key.c", mErrors.first());
+    assertEquals("key.c", mErrors.first().getKey());
   }
 }
