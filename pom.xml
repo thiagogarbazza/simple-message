@@ -4,7 +4,7 @@
 
   <groupId>com.github.thiagogarbazza</groupId>
   <artifactId>simple-message</artifactId>
-  <version>0.1.0</version>
+  <version>0.1.1-SNAPSHOT</version>
 
   <name>Simple message</name>
   <description>A library to simple-message custom, error, information, success and warning.</description>
@@ -47,7 +47,7 @@
     <url>https://github.com/thiagogarbazza/simple-message</url>
     <connection>scm:git:git@github.com:thiagogarbazza/simple-message.git</connection>
     <developerConnection>scm:git:git@github.com:thiagogarbazza/simple-message.git</developerConnection>
-    <tag>0.1.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <ciManagement>
