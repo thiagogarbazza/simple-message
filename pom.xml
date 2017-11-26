@@ -105,7 +105,7 @@
         <version>${plugin.release.version}</version>
         <configuration>
           <preparationGoals>clean verify</preparationGoals>
-          <tagNameFormat>@{project.version}</tagNameFormat>
+          <tagNameFormat>${project.version}</tagNameFormat>
           <autoVersionSubmodules>true</autoVersionSubmodules>
           <releaseProfiles>prepare-release</releaseProfiles>
           <useReleaseProfile>true</useReleaseProfile>
