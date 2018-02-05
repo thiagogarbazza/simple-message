@@ -5,6 +5,8 @@ import org.junit.Test;
 
 import static com.github.thiagogarbazza.simplemessage.MessageType.INFORMATION;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class MessageTest {
 
@@ -39,8 +41,20 @@ public class MessageTest {
   }
 
   @Test
+  public void verifyEgualsFalse() {
+    assertFalse(messageA.equals(messageB));
+    assertFalse(messageA.equals(MESSAGE_CONTENT));
+  }
+
+  @Test
+  public void verifyEgualsTrue() {
+    assertTrue(messageA.equals(messageA));
+    assertTrue(messageA.equals(new Message(INFORMATION, "my.key-a", MESSAGE_CONTENT, "A")));
+  }
+
+  @Test
   public void verifyHascode() {
-    assertEquals(-1874554447, messageA.hashCode());
+    assertEquals(-1874554388, messageA.hashCode());
   }
 
   @Test

@@ -1,5 +1,6 @@
 package com.github.thiagogarbazza.simplemessage;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
 import java.io.Serializable;
@@ -10,6 +11,7 @@ import static java.text.MessageFormat.format;
  * Simple message with type and key.
  */
 @Getter
+@EqualsAndHashCode(doNotUseGetters = true, of = {"key"})
 public class Message implements Comparable<Message>, Serializable {
 
   private final String content;
@@ -49,26 +51,6 @@ public class Message implements Comparable<Message>, Serializable {
     }
 
     return this.key.compareTo(that.key);
-  }
-
-  @Override
-  public int hashCode() {
-    return this.key == null ? super.hashCode() : this.key.hashCode();
-  }
-
-  @Override
-  public boolean equals(Object o) {
-    if (this == o) {
-      return true;
-    }
-
-    if (o == null || getClass() != o.getClass()) {
-      return false;
-    }
-
-    Message that = (Message) o;
-
-    return this.key == null ? that.key == null : this.key.equals(that.key);
   }
 
   @Override
