@@ -66,6 +66,6 @@ public class MessageTest {
 
   @Test
   public void verifyToString() {
-    assertEquals("my.key-a", messageA.toString());
+    assertEquals("Message(my.key-a)", messageA.toString());
   }
 }

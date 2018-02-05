@@ -2,6 +2,7 @@ package com.github.thiagogarbazza.simplemessage;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.ToString;
 
 import java.io.Serializable;
 
@@ -11,7 +12,8 @@ import static java.text.MessageFormat.format;
  * Simple message with type and key.
  */
 @Getter
-@EqualsAndHashCode(doNotUseGetters = true, of = {"key"})
+@EqualsAndHashCode(of = {"key"})
+@ToString(of = {"key"})
 public class Message implements Comparable<Message>, Serializable {
 
   private final String content;
@@ -51,10 +53,5 @@ public class Message implements Comparable<Message>, Serializable {
     }
 
     return this.key.compareTo(that.key);
-  }
-
-  @Override
-  public String toString() {
-    return this.key;
   }
 }
