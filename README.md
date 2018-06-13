@@ -2,7 +2,8 @@
 A library to simple-message custom, error, information, success and warning.
 
 [![Build Status](https://travis-ci.org/thiagogarbazza/simple-message.svg?branch=master)](https://travis-ci.org/thiagogarbazza/simple-message)
-[![Quality Gate](https://sonarcloud.io/api/badges/gate?key=com.github.thiagogarbazza:simple-message)](https://sonarcloud.io/dashboard/index/com.github.thiagogarbazza:simple-message)
+[![Coverage Status](https://sonarcloud.io/api/project_badges/measure?project=com.github.thiagogarbazza:simple-message&metric=alert_status)](https://sonarcloud.io/api/project_badges/measure?project=com.github.thiagogarbazza:simple-message&metric=alert_status)
+[![Coverage Status](https://sonarcloud.io/api/project_badges/measure?project=com.github.thiagogarbazza:simple-message&metric=coverage)](https://sonarcloud.io/api/project_badges/measure?project=com.github.thiagogarbazza:simple-message&metric=coverage)
 
 ## Install
 
