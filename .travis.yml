@@ -14,8 +14,13 @@ cache:
     - '$HOME/.m2/repository'
     - '$HOME/.sonar/cache'
 
-script:
+before_install:
   - mvn clean
+
+install:
+  - mvn compile
+
+script:
   - mvn org.jacoco:jacoco-maven-plugin:prepare-agent verify
   - mvn sonar:sonar
 
