@@ -58,19 +58,9 @@ public class MessageTest {
   }
 
   @Test
-  public void verifyHascode() {
-    assertEquals(-1874554388, messageA.hashCode());
-  }
-
-  @Test
   public void verifySimpleConstructor() {
     assertEquals(INFORMATION, messageA.getType());
     assertEquals("my.key-a", messageA.getKey());
     assertEquals("My message for the key A.", messageA.getContent());
-  }
-
-  @Test
-  public void verifyToString() {
-    assertEquals("Message(my.key-a)", messageA.toString());
   }
 }
