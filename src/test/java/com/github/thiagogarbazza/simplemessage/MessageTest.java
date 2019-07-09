@@ -21,6 +21,11 @@ public class MessageTest {
   }
 
   @Test
+  public void verifyCompareToEqualNull() {
+    assertEquals(1, messageA.compareTo(null));
+  }
+
+  @Test
   public void verifyCompareToEqual() {
     assertEquals(0, messageA.compareTo(messageA));
   }

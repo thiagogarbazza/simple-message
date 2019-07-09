@@ -52,6 +52,12 @@ public class Message implements Comparable<Message>, Serializable {
       return 1;
     }
 
-    return this.key.compareTo(that.key);
+    int compare = this.type.compareTo(that.type);
+
+    if (compare == 0) {
+      compare = this.key.compareTo(that.key);
+    }
+
+    return compare;
   }
 }
