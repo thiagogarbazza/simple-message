@@ -12,8 +12,8 @@ import static java.text.MessageFormat.format;
  * Simple message with type and key.
  */
 @Getter
-@ToString(of = {"key"})
-@EqualsAndHashCode(of = {"key"})
+@ToString(of = {"type", "key"})
+@EqualsAndHashCode(of = {"type", "key"})
 public class Message implements Comparable<Message>, Serializable {
 
   private final String content;
