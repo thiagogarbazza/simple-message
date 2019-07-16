@@ -1,11 +1,11 @@
 package com.github.thiagogarbazza.simplemessage;
 
-import java.util.TreeSet;
+import java.util.ArrayList;
 
 /**
  * Represent a collection of the messages.
  */
-public class Messages extends TreeSet<Message> {
+public class Messages extends ArrayList<Message> {
 
   /**
    * @param type the desired type to extract.
