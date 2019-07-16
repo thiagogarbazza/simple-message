@@ -14,18 +14,18 @@ import static java.text.MessageFormat.format;
 @Getter
 @ToString(of = {"type", "key"})
 @EqualsAndHashCode(of = {"type", "key"})
-public class Message implements Comparable<Message>, Serializable {
+public class SimpleMessage implements Comparable<SimpleMessage>, Serializable {
 
   private final String content;
   private final String key;
-  private final MessageType type;
+  private final SimpleMessageType type;
 
   /**
    * @param type message type can be custom, error, information, success and warning.
    * @param key the key for message.
-   * @param content the Message Content
+   * @param content the SimpleMessage Content
    */
-  public Message(final MessageType type, final String key, final String content) {
+  public SimpleMessage(final SimpleMessageType type, final String key, final String content) {
     this.type = type;
     this.key = key;
     this.content = content;
@@ -42,12 +42,12 @@ public class Message implements Comparable<Message>, Serializable {
    * @throws IllegalArgumentException if the pattern is invalid, or if an argument in the <code>arguments</code> array is not of the type expected
    * by the format element(s) that use it.
    */
-  public Message(final MessageType type, final String key, final String pattern, final Object... arguments) {
+  public SimpleMessage(final SimpleMessageType type, final String key, final String pattern, final Object... arguments) {
     this(type, key, format(pattern, arguments));
   }
 
   @Override
-  public int compareTo(final Message that) {
+  public int compareTo(final SimpleMessage that) {
     if (that == null) {
       return -1;
     }

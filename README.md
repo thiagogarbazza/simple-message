@@ -24,15 +24,15 @@ Example using maven:
 
 Simple usage:
 ```java
-public Message example() {
-  return new Message(MessageType.INFORMATION, "key.a", "Message to key a");
+public SimpleMessage example() {
+  return new SimpleMessage(SimpleMessageType.INFORMATION, "key.a", "Message to key a");
 }
 ```
 
 Simple usage using `java.text.MessageFormat`:
 ```java
-public Message exampleUsingMessageFormat() {
-  return new Message(MessageType.INFORMATION, "key.a", "Message to key {0} by {1}", "a", "Thiago");
+public SimpleMessage exampleUsingMessageFormat() {
+  return new SimpleMessage(SimpleMessageType.INFORMATION, "key.a", "Message to key {0} by {1}", "a", "Thiago");
 }
 ```
 
