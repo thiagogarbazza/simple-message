@@ -22,7 +22,7 @@ public class MessageTest {
 
   @Test
   public void verifyCompareToEqualNull() {
-    assertEquals(1, messageA.compareTo(null));
+    assertEquals(-1, messageA.compareTo(null));
   }
 
   @Test
@@ -42,7 +42,7 @@ public class MessageTest {
 
   @Test
   public void verifyCompareToNull() {
-    assertEquals(1, messageA.compareTo(null));
+    assertEquals(-1, messageA.compareTo(null));
   }
 
   @Test
