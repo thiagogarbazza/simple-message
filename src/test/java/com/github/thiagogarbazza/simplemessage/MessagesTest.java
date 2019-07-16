@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import static com.github.thiagogarbazza.simplemessage.MessageType.CUSTOM;
 import static com.github.thiagogarbazza.simplemessage.MessageType.ERROR;
+import static com.github.thiagogarbazza.simplemessage.MessageType.FATAL_ERROR;
 import static com.github.thiagogarbazza.simplemessage.MessageType.INFORMATION;
 import static com.github.thiagogarbazza.simplemessage.MessageType.SUCCESS;
 import static com.github.thiagogarbazza.simplemessage.MessageType.WARNING;
@@ -20,8 +21,9 @@ public class MessagesTest {
     messages.add(new Message(CUSTOM, "key.a", "Message to key a"));
     messages.add(new Message(INFORMATION, "key.b", "Message to key b"));
     messages.add(new Message(ERROR, "key.c", "Message to key c"));
-    messages.add(new Message(SUCCESS, "key.d", "Message to key d"));
-    messages.add(new Message(WARNING, "key.e", "Message to key e"));
+    messages.add(new Message(FATAL_ERROR, "key.d", "Message to key d"));
+    messages.add(new Message(SUCCESS, "key.e", "Message to key e"));
+    messages.add(new Message(WARNING, "key.g", "Message to key g"));
   }
 
   @Test

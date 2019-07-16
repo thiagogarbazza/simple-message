@@ -6,6 +6,7 @@ package com.github.thiagogarbazza.simplemessage;
 public enum MessageType {
   CUSTOM,
   ERROR,
+  FATAL_ERROR,
   INFORMATION,
   SUCCESS,
   WARNING;

@@ -49,7 +49,7 @@ public class Message implements Comparable<Message>, Serializable {
   @Override
   public int compareTo(final Message that) {
     if (that == null) {
-      return 1;
+      return -1;
     }
 
     int compare = this.type.compareTo(that.type);
