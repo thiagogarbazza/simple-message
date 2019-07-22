@@ -1,5 +1,5 @@
 # simple-message
-A library to simple-message custom, error, information, success and warning.
+A library to simple-message custom, fatal error, error, information, success and warning.
 
 [![Build Status](https://travis-ci.org/thiagogarbazza/simple-message.svg?branch=master)](https://travis-ci.org/thiagogarbazza/simple-message)
 [![Coverage Status](https://sonarcloud.io/api/project_badges/measure?project=com.github.thiagogarbazza:simple-message&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.github.thiagogarbazza:simple-message)
@@ -16,11 +16,11 @@ Example using maven:
 <dependency>
   <groupId>com.github.thiagogarbazza</groupId>
   <artifactId>simple-message</artifactId>
-  <version>0.1.0</version>
+  <version>1.0.0</version>
 </dependency>
 ```
 
-## Usage
+## Usage samples
 
 Simple usage:
 ```java
