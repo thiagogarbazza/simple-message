@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static com.github.thiagogarbazza.simplemessage.SimpleMessageType.INFORMATION;
+import static com.github.thiagogarbazza.simplemessage.SimpleMessageType.WARNING;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -17,7 +18,7 @@ public class SimpleMessageTest {
   @Before
   public void beforeTest() {
     simpleMessageA = new SimpleMessage(INFORMATION, "my.key-a", MESSAGE_CONTENT, "A");
-    simpleMessageB = new SimpleMessage(INFORMATION, "my.key-b", MESSAGE_CONTENT, "B");
+    simpleMessageB = new SimpleMessage(WARNING, "my.key-b", MESSAGE_CONTENT, "B");
   }
 
   @Test
@@ -32,12 +33,12 @@ public class SimpleMessageTest {
 
   @Test
   public void verifyCompareToGreater() {
-    assertEquals(1, simpleMessageB.compareTo(simpleMessageA));
+    assertTrue(simpleMessageB.compareTo(simpleMessageA) > 0);
   }
 
   @Test
   public void verifyCompareToLesser() {
-    assertEquals(-1, simpleMessageA.compareTo(simpleMessageB));
+    assertTrue(simpleMessageA.compareTo(simpleMessageB) < 0);
   }
 
   @Test
